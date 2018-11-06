@@ -246,6 +246,9 @@ footer img {
   footer span {
     display: none;
   }
+  footer img {
+    margin: 4rem 0;
+  }
   footer {
     justify-content: center;
   }
