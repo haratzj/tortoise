@@ -1,0 +1,137 @@
+html {
+  font-size: 18px;
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+  line-height: 1.4;
+}
+
+
+/* TOP BANNER */
+
+div.banner {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+div.banner header {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: cadetblue;
+  justify-content: space-between;
+  color: white;
+}
+
+div.banner header img {
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+div.banner header span {
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+div.banner header nav a {
+  color: white;
+  padding-right: 2rem;
+  text-decoration: none;
+}
+div.banner div.textbox {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: right;
+}
+div.banner div.textbox span {
+  display: inline-block;
+  background-color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  position: relative;
+  left: 2rem;
+}
+
+
+/* MIDDLE SECTION */
+
+div.logos {
+  display: flex;
+  justify-content: center;
+}
+
+div.logos > div {
+  height: 8rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+}
+div.logos img {
+
+}
+div.logos div.exams img {
+  width: 3.5rem;
+}
+
+div.logos div.fittings img,
+div.logos div.delivery img {
+  width: 5rem;
+}
+
+div.info {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+div.info div.title {
+  width: 35%;
+  display: inline-block;
+  margin-right: 5%;
+  vertical-align: top;
+}
+
+div.info div.title div.heading {
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+
+div.info div.title div.heading span {
+  display: block;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  margin: 4rem 1rem 4rem 4rem;
+  height: 1.5rem;
+}
