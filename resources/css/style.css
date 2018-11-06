@@ -46,6 +46,11 @@ div.banner header nav a {
   padding-right: 2rem;
   text-decoration: none;
 }
+
+#menu {
+  display: none;
+}
+
 div.banner div.textbox {
   max-width: 960px;
   margin: 0 auto;
@@ -63,8 +68,63 @@ div.banner div.textbox span {
   left: 2rem;
 }
 
+@media only screen and (max-width: 1040px) {
+  div.banner {
+    padding-top: 0;
+    height: 22rem;
+  }
+  div.banner header {
+    max-width: 100%;
+    margin: 0;
+  }
+  div.banner div.textbox {
+    max-width: 100%;
+    text-align: right;
+  }
+  div.banner div.textbox span {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    position: static;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  div.banner header>span {
+    display: none;
+  }
+
+  div.banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  div.banner div.textbox span {
+    display: block;
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 9rem;
+    margin-right: 0;
+  }
+
+  div.banner header nav a {
+    display: none;
+  }
+  #menu {
+    display: inline;
+  }
+
+  div.banner header nav {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
 
 /* MIDDLE SECTION */
+
 
 div.logos {
   display: flex;
@@ -103,7 +163,6 @@ div.info {
 
 div.info div.title {
   width: 35%;
-  display: inline-block;
   margin-right: 5%;
   vertical-align: top;
 }
@@ -122,6 +181,53 @@ div.info div.title div.heading span {
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 660px) {
+  div.logos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.logos div.exams {
+    height: 7.5rem;
+    margin: 3.5rem 0 0 0;
+  }
+
+  div.logos div.fittings,
+  div.logos div.delivery {
+    height: 6rem;
+    margin: 2rem 0 0 0;
+  }
+
+  div.logos div.delivery {
+    margin-bottom: 3rem;
+  }
+
+  div.info {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  div.info div.title {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  div.info div.title div.heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  div.info div.title p{
+    font-size: 0.77rem;
+    margin: 0 1%;
+  }
+}
+
+
+/* FOOTER SECTION */
+
 
 footer {
   max-width: 960px;
@@ -134,4 +240,13 @@ footer {
 footer img {
   margin: 4rem 1rem 4rem 4rem;
   height: 1.5rem;
+}
+
+@media only screen and (max-width: 660px) {
+  footer span {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+  }
 }
